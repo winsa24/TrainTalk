@@ -1,0 +1,9 @@
+<!--pages/level/level.wxml-->
+
+<view class='main'>
+
+<button class='btn' bindtap='GotoPrimary' hover-class='btn_hover'>Primary</button>
+<button class='btn' bindtap='GotoJunior' hover-class='btn_hover'>Junior</button>
+<button class='btn' bindtap='GotoSenior' hover-class='btn_hover'>Senior</button>
+</view>
+

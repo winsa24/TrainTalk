@@ -1,0 +1,16 @@
+/* pages/primary/primary.wxss */
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  align-items: center
+}
+
+/* .word {
+  width: 100px;
+  height: 300px;
+  margin-top: 100rpx;
+  background-color: rgba(0, 162, 255, 0.089);
+  color: #FFF;
+} */

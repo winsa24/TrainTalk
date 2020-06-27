@@ -1,0 +1,14 @@
+<!--pages/primary/primary.wxml-->
+<view class="main">
+  <button bindtap='start'>Start</button>
+  <view class='word'>
+    <text class='word'>{{word}}</text>
+    <text class='word'>({{wtype}})</text>
+  </view>
+
+  <view class='time'>
+    <text>{{second}}</text>
+  </view>
+
+  <button hidden="{{pa}}" bindtap='playAudio'>PlayAudio</button>
+</view>

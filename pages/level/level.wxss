@@ -1,0 +1,23 @@
+/* pages/level/level.wxss */
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  align-items: center
+}
+
+.btn {
+  width: 90%;
+  margin-top: 100rpx;
+  background-color: #FFCC00;
+  color: #FFF;
+}
+
+.btn::after {
+  border: 0;
+}
+
+.btn_hover {
+  background-color: pink;
+}
