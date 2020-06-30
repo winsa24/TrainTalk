@@ -5,7 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
+    b1:"paused",
+  },
 
+  start: function(){
+    console.log(this.data.b1);
+    this.setData({
+      b1: "running",
+    })
+    console.log(this.data.b1);
   },
 
   /**

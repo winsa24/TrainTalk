@@ -1,2 +1,13 @@
 <!--pages/senior/senior.wxml-->
-<text>pages/senior/senior.wxml</text>
+<span>
+  <div></div>
+  <div style="animation: m1 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m2 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m3 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m4 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m11 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m21 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m31 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m41 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <button bindtap="start">start</button>
+</span>

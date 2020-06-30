@@ -1,2 +1,11 @@
 <!--pages/junior/junior.wxml-->
-<text>pages/junior/junior.wxml</text>
+<div id="all">
+  <div id="card1" class="card">
+        </div>
+        <div id="card2" class="card">
+        </div>
+        <div id="text" class="text">
+            <p>Card shuffling</p>
+  </div>
+
+</div>
