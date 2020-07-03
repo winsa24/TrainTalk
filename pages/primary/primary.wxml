@@ -1,14 +1,25 @@
 <!--pages/primary/primary.wxml-->
 <view class="main">
-  <button bindtap='start'>Start</button>
+  <button class="start" bindtap='start'>Start</button>
+  <span>
+  <div></div>
+  <div style="animation: m1 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m2 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m3 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m4 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m11 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m21 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m31 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m41 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: f 2s; animation-play-state: {{b1}}; animation-delay: 4s;"></div>
+  </span>
   <view class='word'>
-    <text class='word'>{{word}}</text>
-    <text class='word'>({{wtype}})</text>
+    <text>{{word}}\n{{wtype}}</text>
   </view>
 
   <view class='time'>
-    <text>{{second}}</text>
+    <text>Time: {{second}}</text>
   </view>
 
-  <button hidden="{{pa}}" bindtap='playAudio'>PlayAudio</button>
+  <button class="pa" hidden="{{pa}}" bindtap='playAudio'>PlayAudio</button>
 </view>

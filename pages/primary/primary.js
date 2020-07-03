@@ -24,8 +24,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    b1:"paused",
     pa: true,
-    second: 5,
+    second: 30,
     word: "",
     wtype: "",
     adj: ["安全","跋扈","霸道","温柔","滑稽","开朗","活波","怪异","仁慈","华丽","时尚","成熟","典雅","紧张","痛苦","迷茫","亲密","危险"],
@@ -35,11 +36,17 @@ Page({
 
   start: function(){
     var that = this;
-    that.getWord();
-    countdown(that);
-    this.recorderManager.start({
-      format: 'mp3'  // 如果录制acc类型音频则改成aac
-    });
+    this.setData({
+      b1: "running",
+    })
+    setTimeout(() => {
+      that.getWord();
+      countdown(that);
+      this.recorderManager.start({
+        format: 'mp3'  // 如果录制acc类型音频则改成aac
+      });
+    }, 6000);
+    
   },
 
   getWord: function (){
@@ -50,19 +57,19 @@ Page({
       var random = Math.round(Math.random() * 18);
       that.setData({
         word: that.data.adj[random],
-        wtype: "形容词"
+        wtype: "(形容词)"
       })
     }else if(type == 1){
       var random = Math.round(Math.random() * 18);
       that.setData({
         word: that.data.verb[random],
-        wtype: "动词"
+        wtype: "(动词)"
       })
     }else{
       var random = Math.round(Math.random() * 18);
       that.setData({
         word: that.data.noun[random],
-        wtype: "名词"
+        wtype: "(名词)"
       })
     }
     

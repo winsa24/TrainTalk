@@ -1,11 +1,30 @@
-<!--pages/junior/junior.wxml-->
-<div id="all">
-  <div id="card1" class="card">
-        </div>
-        <div id="card2" class="card">
-        </div>
-        <div id="text" class="text">
-            <p>Card shuffling</p>
-  </div>
+<view class="main">
+  <button class="start" bindtap='start'>Start</button>
+  <span>
+  <div></div>
+  <div style="animation: m1 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m2 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m3 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m4 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m11 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m21 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m31 2s; animation-play-state: {{b1}}; animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: m41 2s; animation-play-state: {{b1}};animation-iteration-count: 2; animation-direction: alternate;"></div>
+  <div style="animation: f1 2s; animation-play-state: {{b1}}; animation-delay: 4s; animation-fill-mode:forwards; "></div>
+  <view class="word_l">{{word[0].d}}\n{{word[0].t}}</view>
+  <div style="animation: f2 2s; animation-play-state: {{b1}}; animation-delay: 6s; animation-fill-mode:forwards; "></div>
+  </span>
 
-</div>
+  
+  <view class="word_r">{{word[1].d}}\n{{word[1].t}}</view>
+    <!-- <text class='word1'>{{word1}}\n{{wtype1}}</text>
+    <text class='word2'>{{word2}}\n{{wtype2}}</text> -->
+ 
+
+  <view class='time'>
+    <text>Time: {{second}}</text>
+  </view>
+
+  <button class="pa" hidden="{{pa}}" bindtap='playAudio'>PlayAudio</button>
+  <button class="re" hidden="{{re}}" bindtap='replay'>Replay</button>
+</view>

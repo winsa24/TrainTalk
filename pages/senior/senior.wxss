@@ -1,9 +1,53 @@
-/* pages/senior/senior.wxss */
 button{
-  position: absolute;
-  top: 700px;
-  left: 30px
+  width: 90%;
+  margin-top: 100rpx;
+  background-color: #FFCC00;
+  color: #FFF;
 }
+.start{
+  position: absolute;
+  top: 80px;
+  left: 110px;
+}
+.pa{
+  position: absolute;
+  bottom: 100px;
+  left: 110px;
+}
+.time{
+  position: absolute;
+  bottom: 200px;
+  left: 160px;
+}
+.word_l {
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  top: 330px;
+  left: 50px;
+  font-size: 48rpx;
+  color: #FFF;
+}
+.word_m{
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  top: 330px;
+  left: 160px;
+  font-size: 48rpx;
+  color: #FFF;
+}
+.word_r {
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  top: 330px;
+  right: 50px;
+  font-size: 48rpx;
+  color: #FFF;
+}
+
+
 div{
   position: absolute;
   background: #B9E3C6;
@@ -11,8 +55,6 @@ div{
   height: 120px;
   top: 300px;
   left: 150px;
-  animation-iteration-count: 2;   /* 动画播放两次 */
-  animation-direction: alternate; /* 来回 */
 }
 
 @keyframes m1{
@@ -75,7 +117,29 @@ div{
     transform: translateX(-200px) translateY(-200px) rotate(90deg);
   }
 }
-@keyframes f{
+@keyframes f1{
+  0%{
+  }
+  50%{
+    transform: translateX(-50px) rotate(90deg) scale(1.5);
+  }
+  100%{
+    transform: translateX(-110px) rotateY(180deg);
+    /* background-color: pink; */
+  }
+}
+
+@keyframes f2{
+  0%{
+  }
+  50%{
+    transform: translateX(50px) rotate(90deg) scale(1.5);
+  }
+  100%{
+    transform: translateX(110px) rotateY(180deg);
+    /* background-color: pink; */
+  }
+}@keyframes f3{
   0%{
   }
   50%{
@@ -83,5 +147,6 @@ div{
   }
   100%{
     transform: rotateY(180deg);
+    /* background-color: pink; */
   }
 }
